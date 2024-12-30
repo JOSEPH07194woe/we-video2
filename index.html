@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Video</title>
+    <link rel="stylesheet" href="assets/css/styles.css"> <!-- Link to CSS -->
+</head>
+<body>
+    <header>
+        <h1>Welcome to We Video</h1>
+    </header>
+
+    <section class="upload-form">
+        <h2>Upload Your Video</h2>
+        <form action="upload_video" method="POST" enctype="multipart/form-data">
+            <label for="video-file">Select video to upload:</label>
+            <input type="file" name="videoFile" id="video-file" accept="video/*" required>
+            <button type="submit">Upload Video</button>
+        </form>
+    </section>
+
+    <section class="videos">
+        <h2>Uploaded Videos</h2>
+        <!-- Placeholder for uploaded videos -->
+    </section>
+
+    <script src="assets/js/main.js"></script> <!-- Link to JavaScript -->
+</body>
+</html>
