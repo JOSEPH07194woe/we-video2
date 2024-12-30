@@ -3,17 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>We Video</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+    <title>WeVideo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Quick styling to make the page visually appealing */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header {
+            background: #0078d7;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        .upload-form, .videos {
+            margin: 2rem auto;
+            padding: 1rem;
+            max-width: 600px;
+            background: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            margin-bottom: 1rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input[type="file"] {
+            padding: 0.5rem;
+        }
+
+        button {
+            padding: 0.75rem;
+            background: #0078d7;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #005bb5;
+        }
+
+        .videos h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to We Video</h1>
+        <h1>Welcome to WeVideo</h1>
     </header>
 
     <section class="upload-form">
         <h2>Upload Your Video</h2>
-        <form>
+        <form action="#" method="POST" enctype="multipart/form-data">
             <label for="video-file">Select video to upload:</label>
             <input type="file" name="videoFile" id="video-file" accept="video/*" required>
             <button type="submit">Upload Video</button>
@@ -22,8 +86,13 @@
 
     <section class="videos">
         <h2>Uploaded Videos</h2>
+        <p>No videos uploaded yet. Start by uploading your first video!</p>
     </section>
 
-    <script src="script.js"></script> <!-- Link to external JS -->
+    <script src="script.js"></script>
+<footer style="text-align: center; padding: 1rem; background: #f4f4f9; margin-top: 2rem;">
+        &copy; 2024 WolfTech Innovations. All rights reserved.
+    </footer>
+
 </body>
 </html>
